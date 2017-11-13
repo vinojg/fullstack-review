@@ -1,10 +1,17 @@
 import React from 'react';
 
-const RepoList = (props) => (
-  <div>
+class RepoList extends React.Component {
+  constructor(props) {
+    super(props);
+
+  }
+
+  render() {
+    return (<div>
     <h4> Repo List Component </h4>
-    There are {props.repos.length} repos.
-  </div>
-)
+    There are {this.props.repos.length} repos.
+  </div>) 
+  }
+}
 
 export default RepoList;
